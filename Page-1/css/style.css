@@ -1,0 +1,236 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: Century Gothic;
+}
+body{
+    transition: background-color .5s;
+}
+section{
+    background-image: url(../assets/images/background-1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.main ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 20px;
+}
+.main ul li{
+    display: inline-block;
+}
+.main ul li a{
+    text-decoration: none;
+    color:black;
+    border: 1px solid black;
+    padding: 5px 30px; 
+    letter-spacing: 2px;
+    position: relative;
+    transition: all .30s;
+    display: block;
+    
+}
+.main ul li a:after{
+   position: absolute;
+   content: "";
+   top:0;
+   left:0;
+   width:0;
+   height:100%;
+   background:black;
+   transition:all .35s;
+   
+}
+.main ul li a:hover:after{
+   width:100%;
+}
+.main ul li a:hover{
+    color:#fff;
+}
+.main ul li a span{
+    position: relative;
+    z-index: 2;
+}
+.main{
+      max-width: 1200px;
+      float: right;
+}
+
+.side ul{
+    float: left;
+    list-style-type: none;
+    margin-top: 20px;
+}
+.side ul li{
+    display: inline-block;
+}
+.side ul li a{
+    text-decoration: none;
+    color:black;
+    border: 1px solid black;
+    padding: 5px 30px; 
+    letter-spacing: 2px;
+    position:relative;
+    transition: all .30s;
+    display: block;
+    
+}
+.side ul li a:after{
+   position: absolute;
+   content: "";
+   top:0;
+   left:0;
+   width:0;
+   height:100%;
+   background:black;
+   transition:all .35s;
+   
+}
+.side ul li a:hover:after{
+   width:100%;
+}
+.side ul li a:hover{
+    color:#fff;
+}
+.side ul li a span{
+    position: relative;
+    z-index: 2;
+}
+.side{
+      max-width: 1200px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #maintab {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  h3{
+      float:center;
+      color:white;
+      padding-top: 20px;
+  }
+  input[type="email"], input[type="password"]{
+    font: 15px 'Muli', sans-serif; 
+    color:#fff; 
+    width: 150px; 
+    box-sizing: border-box; 
+    letter-spacing: 1px;
+  }
+
+:focus{
+    outline: none;
+}
+
+.col-3{
+    float:center;
+    width: 27.33%; 
+    margin: 100px auto; 
+    position: relative;
+} 
+/* necessary to give position: relative to parent. */
+
+.effect-17{
+    border: 0; 
+    padding: 4px 3%; 
+    border-bottom: 1px solid #ccc; 
+    background-color: transparent;
+}
+.effect-17 ~ .focus-border{
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    width: 0; 
+    height: 2px; 
+    background-color:purple; 
+    transition: 0.4s;
+}
+.effect-17:focus ~ .focus-border,
+.has-content.effect-17 ~ .focus-border{
+    width: 200px; 
+    transition: 0.4s; 
+    left: 0px;
+}
+.effect-17 ~ label{
+    position: absolute; 
+    right: 10px; 
+    width: 100%; 
+    top: 5px; 
+    color: #aaa; 
+    transition: 0.3s; 
+    z-index: -1; 
+    letter-spacing: 0.5px;
+}
+.effect-17:focus ~ label, .has-content.effect-17 ~ label{
+    top: -16px; 
+    font-size: 13px; 
+    color:#fff; 
+    transition: 0.3s;
+    right: 50px;
+}
+.form{
+    border: 1px solid #fff;
+    margin-left:100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    
+}
+.button{
+    font-size: 20px;
+    margin-bottom: 50px;
+    background-color:transparent;
+    color:#fff;
+    border: 1px solid #ffff; 
+    padding:5px 30px;
+}
+.button:hover{
+    background: white;
+    color:black;
+}
+.button-effect a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.button-effect a:hover{
+    color:purple;
+    text-decoration: none;
+}

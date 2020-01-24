@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>Web page 2</title>
+        <link type="text/css" rel="stylesheet" href="D:\Project\Web_Pages\Page-2\css\style.css">
+        
+    </head>
+    <body>
+       <section>
+           <div class="main" id="maintab" >
+               <ul>
+                   <li><a href="#"><span>Home</span></a></li>
+                   <li><a href="#"><span>Service</span></a></li>
+                   <li><a href="#"><span>Gallery</span></a></li>
+                   <li><a href="#"><span>About</span></a></li>
+                   <li><a href="#"><span>Contact</span></a></li>
+                   <li><a class="closebtn" ><span style="cursor:pointer" onclick="openNav()">&#9776; Sign Up</span></a></li>
+               </ul>
+           </div>
+           <!--Side bar-->
+            <div class="side">
+                  <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <!--Input field in sidenav-->
+                    <form class="form">
+                     <h3>Login</h3>
+                    <div class="col-3 input-effect">
+                        <input class="effect-17" type="email" placeholder="">
+                        <label>Email Id</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="col-3 input-effect">
+                        <input class="effect-17" type="password" placeholder="">
+                        <label>Password</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="button-effect">
+                        <button class="button" type="submit" value="submit">Sign In</button>
+                        <a href="">Are you Registered??</a>
+                    </div>
+                   </form>
+                  </div>
+
+               
+           </div> 
+        </section>
+
+         <script>
+                function openNav() {
+                      document.getElementById("mySidenav").style.width = "50%";
+                }
+
+                function closeNav() {
+                      document.getElementById("mySidenav").style.width = "0";
+                }
+         </script>
+    </body>
+    
+ </html>
