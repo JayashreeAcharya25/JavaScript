@@ -1,0 +1,62 @@
+*{
+    padding : 0;
+    margin : 50;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    align-items: center;
+}
+
+h1{
+    padding: 16px;
+    font-size: 36px;
+}
+h3{
+    padding: 16px;
+    font-size: 24px;
+}
+
+.won{
+    margin : 0 auto;
+    position: absolute;
+    top:70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:250px;
+    height: 200px;
+    font-size: 48px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+@keyframes slide-down{
+    from{
+        top:0px;
+    }
+    to{
+        top:50%;
+    }
+}
+
+.won .play, .button{
+    height: 32px;
+    font-size: 12px;
+    margin-top: 28px;
+    padding: 8px 32px;
+    background:black;
+    border: none;
+    color:white;
+}
+
+.message{
+    font-size: 20px;
+}
+
+input{
+    height: 32px;
+    width: 320px;
+}
